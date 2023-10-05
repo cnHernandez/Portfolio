@@ -109,13 +109,13 @@ body{
     display: flex;
     justify-content: space-between;
     margin-left: -205px;
-    padding-top: 5px;
+    padding-top: 15px;
     align-items: center;
 }
 
 .tech {
     height: 40px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 .contacto img {
 
