@@ -1,0 +1,216 @@
+body{
+    font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ff8c00;
+  background: #fff;
+}
+.caja-central{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 50%;
+    background-color: #ff8c00; 
+}
+
+.caja-cara{
+    .caja-cara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        background-color: #ff8c00;
+        
+    }
+}
+.cara{
+    border-radius: 450px;
+    height: 250px;
+}
+
+#nombre {
+    font-size: 3.3em;
+    transform: rotate(-8deg);
+    margin: 10px 0;
+}
+
+#profesion {
+    font-family: 'Space Mono', monospace;
+    color: #303030;
+    font-size: 1.23em;
+    color:blanchedalmond;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+
+    .uno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 15px);
+        background-color: #ff8c00;
+        color: white;
+    }
+
+.dos{
+   
+    background-color: #F2F2F2;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.tres {
+    background-color: #fcfcfc;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.cuatro{
+   
+    background-color: #F2F2F2;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.aptitudes{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+}
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -205px;
+    padding-top: 5px;
+}
+
+.tech{
+    height: 90px;
+    margin-left: 50px;
+}
+.contacto img {
+
+    justify-content: center;
+    width: 45px; 
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#sobreMi{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: #303030;
+    margin-top: -50px;
+    text-align: center;
+}
+
+#descripcionSobreMi{
+    margin-bottom: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.23em;
+    color: #303030;
+    text-align: center;  
+}
+#Aptitudes{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: #303030;
+    text-align: center;
+}
+#descripcionAptitudes{
+    margin-top: -10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.23em;
+    color: #303030;
+    text-align: center;
+}
+#Cursos{
+    margin-top: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: #303030;
+    text-align: center;
+}
+#listaCursos{
+    margin-top: -10px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    color: #303030;
+    text-align: left;
+}
+
+
+#Proyectos {
+    margin-top: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    color: #303030;
+    text-align: center;
+}
+
+.proyectos {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+    width: 48%; /* Ajusta este valor según sea necesario */
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card .proyecto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card img {
+   
+    width: 80%; /* Ajusta este valor según sea necesario */
+    height: auto;
+    width: 100%; /* Ajusta este valor según sea necesario */
+   
+}
+
+#txtProyecto {
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    color: #303030;
+    text-align: center;
+}
