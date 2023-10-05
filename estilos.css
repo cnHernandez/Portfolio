@@ -221,9 +221,23 @@ body{
         flex-direction: column;
     }
 
+    #nombre {
+        text-align: center;
+    }
+
     .caja-cara {
         width: 100%;
         height: auto; /* Cambiado de 50% a auto */
+        align-items: center;
+    }
+
+    #sobreMi {
+        margin-top: 10%;
+    }
+
+    .tech-list {
+        height: 40px;
+        margin-left: 50px;
     }
 
     .caja-presentacion {
