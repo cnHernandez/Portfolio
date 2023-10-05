@@ -250,8 +250,9 @@ body{
     }
 
     .tech {
-        height: 40px;
+        height: 80px;
         margin: 5px;
+        align-items: center;
     }
     .caja-presentacion {
         width: 100%;
