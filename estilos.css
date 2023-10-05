@@ -114,8 +114,8 @@ body{
 }
 
 .tech {
-    height: 40px;
-    margin-left: 150px;
+    height: 80px;
+    margin-left: 10px;
 }
 .contacto img {
 
@@ -253,6 +253,7 @@ body{
         height: 80px;
         margin: 5px;
         align-items: center;
+        margin-left: 10px;
     }
     .caja-presentacion {
         width: 100%;
@@ -294,7 +295,8 @@ body{
 @media (max-width: 800px) {
     .tech-list {
         padding: 10px; /* Añadido espaciado interno para mejorar la legibilidad en pantallas pequeñas */
-        align-items:center;
+        align-items: center;
+        margin-left: 10px;
     }
 
     .tech {
