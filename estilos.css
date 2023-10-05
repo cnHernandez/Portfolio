@@ -241,10 +241,18 @@ body{
     }
 
     .tech-list {
-        height: 40px;
-        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-left: 0;
     }
 
+    .tech {
+        height: 40px;
+        margin: 5px;
+    }
     .caja-presentacion {
         width: 100%;
         height: auto; /* Cambiado de 50% a auto */
@@ -279,5 +287,15 @@ body{
     .card {
         width: 100%; /* Cambiado de 80% a 100% */
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tech-list {
+        padding: 10px; /* Añadido espaciado interno para mejorar la legibilidad en pantallas pequeñas */
+    }
+
+    .tech {
+        height: 30px; /* Ajustado el tamaño para pantallas más pequeñas */
     }
 }
