@@ -291,12 +291,14 @@ body{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .tech-list {
         padding: 10px; /* Añadido espaciado interno para mejorar la legibilidad en pantallas pequeñas */
+        align-items:center;
     }
 
     .tech {
-        height: 30px; /* Ajustado el tamaño para pantallas más pequeñas */
+        height: 60px; /* Ajustado el tamaño para pantallas más pequeñas */
+        align-items:center;
     }
 }
