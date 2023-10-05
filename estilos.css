@@ -105,15 +105,16 @@ body{
     width: 50%;
     display: flex;
 }
-.tech-list{
+.tech-list {
     display: flex;
     justify-content: space-between;
     margin-left: -205px;
     padding-top: 5px;
+    align-items: center;
 }
 
-.tech{
-    height: 90px;
+.tech {
+    height: 40px;
     margin-left: 50px;
 }
 .contacto img {
