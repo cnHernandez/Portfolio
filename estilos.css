@@ -132,6 +132,16 @@ body{
     margin-bottom: 10px;
 }
 
+.red-social {
+    width: 50px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.red-social:hover {
+    transform: scale(1.2); /* Escala el icono al 120% en hover */
+}
+
 #sobreMi{
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
