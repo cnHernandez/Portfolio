@@ -1,18 +1,20 @@
-body{
+body {
     font-family: 'Kaushan Script', cursive;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #ff8c00;
-  background: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ff8c00;
+    background: #fff;
 }
+
 .caja-central {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.caja-central{
+
+.caja-central {
     margin-top: 10%;
     width: 50%;
     display: flex;
@@ -20,18 +22,18 @@ body{
     border-radius: 10px;
     overflow: hidden;
     height: 50%;
-    background-color: #ff8c00; 
+    background-color: #ff8c00;
 }
 
-.caja-cara{
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        background-color: #ff8c00;
+.caja-cara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #ff8c00;
 }
-.cara{
+
+.cara {
     border-radius: 450px;
     height: 250px;
 }
@@ -46,37 +48,37 @@ body{
     font-family: 'Space Mono', monospace;
     color: #303030;
     font-size: 1.23em;
-    color:blanchedalmond;
+    color: blanchedalmond;
     margin: 10px 0;
     text-align: center;
     margin-bottom: 10px;
-    
 }
 
 
-    .uno {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 15px);
-        background-color: #ff8c00;
-        color: white;
-    }
+.uno {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 15px);
+    background-color: #ff8c00;
+    color: white;
+    margin: 0; /* Eliminar el margen inferior para quitar el espacio en blanco */
+}
 
-.dos{
-   
+.dos {
     background-color: #F2F2F2;
-    height: 700px;
+    height: auto; /* Cambiado de 700px a auto */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 0 20px; /* Ajustar padding para asegurar que el contenido esté alineado */
+    margin: 0; /* Eliminar el margen superior para que esté pegado a la sección anterior */
 }
+
 .tres {
     background-color: #fcfcfc;
     height: 280px;
@@ -88,10 +90,10 @@ body{
     padding-left: 20%;
     padding-right: 20%;
 }
-.cuatro{
-   
+
+.cuatro {
     background-color: #F2F2F2;
-    height: 500px;
+    height: auto; /* Cambiado de 500px a auto */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,34 +101,37 @@ body{
     color: #303030;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 20px; /* Añadido espacio superior */
 }
-.aptitudes{
+
+.aptitudes {
     margin-top: 10%;
     width: 50%;
     display: flex;
 }
+
 .tech-list {
     display: flex;
-    justify-content: space-between;
-    margin-left: -205px;
-    padding-top: 15px;
-    align-items: center;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    padding-top: 15px; /* Espacio superior */
+    margin-top: -30px; /* Ajusta para elevar las imágenes un poco más */
+    align-items: center; /* Centra las imágenes verticalmente */
 }
 
 .tech {
-    height: 80px;
-    margin-left: 60px;
+    height: 80px; /* Ajusta la altura según sea necesario */
+    margin: 0 20px; /* Espacio entre las imágenes, ajusta según sea necesario */
 }
-.contacto img {
 
+.contacto img {
     justify-content: center;
-    width: 45px; 
+    width: 45px;
     margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.contacto{
+.contacto {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -138,46 +143,50 @@ body{
     transition: transform 0.3s ease; /* Agrega una transición suave */
 }
 
-.red-social:hover {
-    transform: scale(1.2); /* Escala el icono al 120% en hover */
-}
+    .red-social:hover {
+        transform: scale(1.2); /* Escala el icono al 120% en hover */
+    }
 
-#sobreMi{
+#sobreMi {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
-    margin-top: -50px;
+    margin-top: 0; /* Asegúrate de que no haya margen superior innecesario */
     text-align: center;
 }
 
-#descripcionSobreMi{
-    margin-bottom: 0px;
+#descripcionSobreMi {
+    margin-bottom: 0;
     font-family: 'Space Mono', monospace;
     font-size: 1.23em;
     color: #303030;
-    text-align: center;  
+    text-align: center;
 }
-#Aptitudes{
+
+#Aptitudes {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
     text-align: center;
 }
-#descripcionAptitudes{
+
+#descripcionAptitudes {
     margin-top: -10px;
     font-family: 'Space Mono', monospace;
     font-size: 1.23em;
     color: #303030;
     text-align: center;
 }
-#Cursos{
+
+#Cursos {
     margin-top: 30px;
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
     text-align: center;
 }
-#listaCursos{
+
+#listaCursos {
     margin-top: -10px;
     font-family: 'Space Mono', monospace;
     font-size: 1em;
@@ -187,8 +196,7 @@ body{
 
 
 #Proyectos {
-    margin-top: 20px;
-    font-family: 'Kaushan Script', cursive;
+    margin-top: 30px;
     font-size: 2.5em;
     color: #303030;
     text-align: center;
@@ -198,6 +206,7 @@ body{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas más pequeñas */
 }
 
 .card {
@@ -206,22 +215,21 @@ body{
     border: solid #F2F2F2 1px;
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 20px; /* Espacio entre tarjetas */
 }
 
-.card .proyecto-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+    .card .proyecto-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.card img {
-   
-    width: 80%; /* Ajusta este valor según sea necesario */
-    height: auto;
-    width: 100%; /* Ajusta este valor según sea necesario */
-   
-}
+    .card img {
+        width: 100%; /* Ajusta la anchura de la imagen para que llene el contenedor */
+        height: 200px; /* Altura fija para todas las imágenes, ajusta según sea necesario */
+        object-fit: cover; /* Mantiene la proporción y cubre el área del contenedor */
+        border-radius: 10px; /* Opcional: Asegura que las imágenes también tengan bordes redondeados */
+    }
 
 #txtProyecto {
     font-family: 'Space Mono', monospace;
@@ -229,6 +237,7 @@ body{
     color: #303030;
     text-align: center;
 }
+
 @media (max-width: 1000px) {
     .caja-central {
         width: 90%;
@@ -265,6 +274,7 @@ body{
         align-items: center;
         margin-left: 10px;
     }
+
     .caja-presentacion {
         width: 100%;
         height: auto; /* Cambiado de 50% a auto */
@@ -300,6 +310,38 @@ body{
         width: 100%; /* Cambiado de 80% a 100% */
         margin-top: 20px;
     }
+
+    /* Estilos para el botón anterior */
+    .slick-prev {
+        background-color: #303030; /* Color de fondo del botón */
+        color: #ff8c00; /* Color del ícono dentro del botón */
+        border-radius: 50%; /* Bordes redondeados para botones circulares */
+        width: 40px; /* Ancho del botón */
+        height: 40px; /* Alto del botón */
+        line-height: 40px; /* Alineación vertical del ícono */
+        text-align: center; /* Alineación del ícono dentro del botón */
+        font-size: 20px; /* Tamaño del ícono */
+        z-index: 1; /* Asegura que los botones estén sobre otros elementos */
+    }
+
+    /* Estilos para el botón siguiente */
+    .slick-next {
+        background-color: #303030; /* Color de fondo del botón */
+        color: #ff8c00; /* Color del ícono dentro del botón */
+        border-radius: 50%; /* Bordes redondeados para botones circulares */
+        width: 40px; /* Ancho del botón */
+        height: 40px; /* Alto del botón */
+        line-height: 40px; /* Alineación vertical del ícono */
+        text-align: center; /* Alineación del ícono dentro del botón */
+        font-size: 20px; /* Tamaño del ícono */
+        z-index: 1; /* Asegura que los botones estén sobre otros elementos */
+    }
+
+        /* Estilos para los botones de navegación cuando están sobrevolados */
+        .slick-prev:hover, .slick-next:hover {
+            background-color: #555555; /* Color de fondo al pasar el ratón sobre el botón */
+            color: #ff8c00; /* Color del ícono al pasar el ratón sobre el botón */
+        }
 }
 
 @media (max-width: 800px) {
@@ -311,6 +353,6 @@ body{
 
     .tech {
         height: 60px; /* Ajustado el tamaño para pantallas más pequeñas */
-        align-items:center;
+        align-items: center;
     }
 }
