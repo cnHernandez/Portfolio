@@ -69,39 +69,39 @@ body {
 
 .dos {
     background-color: #F2F2F2;
-    height: auto; /* Cambiado de 700px a auto */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #303030;
-    padding: 0 20px; /* Ajustar padding para asegurar que el contenido esté alineado */
-    margin: 0; /* Eliminar el margen superior para que esté pegado a la sección anterior */
+    padding: 40px 20px;
+    margin: 0;
 }
 
 .tres {
     background-color: #fcfcfc;
-    height: 280px;
+    height: auto;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 50px 20%;
+    margin: 0;
 }
 
 .cuatro {
     background-color: #F2F2F2;
-    height: auto; /* Cambiado de 500px a auto */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #303030;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 20px; /* Añadido espacio superior */
+    padding: 50px 20%;
+    margin: 0;
 }
 
 .aptitudes {
@@ -151,7 +151,8 @@ body {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
-    margin-top: 0; /* Asegúrate de que no haya margen superior innecesario */
+    margin-top: 0;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -167,11 +168,14 @@ body {
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 #descripcionAptitudes {
-    margin-top: -10px;
+    margin-top: 0;
+    margin-bottom: 40px;
     font-family: 'Space Mono', monospace;
     font-size: 1.23em;
     color: #303030;
@@ -179,7 +183,8 @@ body {
 }
 
 #Cursos {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-family: 'Kaushan Script', cursive;
     font-size: 2.5em;
     color: #303030;
@@ -187,16 +192,19 @@ body {
 }
 
 #listaCursos {
-    margin-top: -10px;
+    margin-top: 0;
     font-family: 'Space Mono', monospace;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #303030;
     text-align: left;
+    line-height: 2.2;
+    padding-left: 20px;
 }
 
 
 #Proyectos {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 2.5em;
     color: #303030;
     text-align: center;
@@ -229,6 +237,20 @@ body {
         height: 200px; /* Altura fija para todas las imágenes, ajusta según sea necesario */
         object-fit: cover; /* Mantiene la proporción y cubre el área del contenedor */
         border-radius: 10px; /* Opcional: Asegura que las imágenes también tengan bordes redondeados */
+    }
+
+    /* Ajuste especial para el logo de WhatsApp */
+    .card img[src*="WhatsApp"] {
+        object-fit: contain; /* Cambia a contain para que el logo se vea completo */
+        padding: 20px; /* Añade un poco de padding alrededor del logo */
+        background-color: #fff; /* Fondo blanco para que contraste */
+    }
+
+    /* Ajuste especial para el logo.png */
+    .card img[src*="logo.png"] {
+        object-fit: contain; /* Cambia a contain para que el logo se vea completo */
+        padding: 20px; /* Añade un poco de padding alrededor del logo */
+        background-color: #fff; /* Fondo blanco para que contraste */
     }
 
 #txtProyecto {
@@ -355,4 +377,29 @@ body {
         height: 60px; /* Ajustado el tamaño para pantallas más pequeñas */
         align-items: center;
     }
+}
+
+/* Botón de descarga de CV */
+.btn-cv {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #ff8c00, #ff6b00);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    background: linear-gradient(135deg, #ff6b00, #ff8c00);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-cv i {
+    margin-right: 8px;
 }
