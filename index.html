@@ -1,158 +1,430 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="programacion_1.ico">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Mono&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ApNbCeJOb33dAaZ3L0j1yb4aFRP0SxfMrK4IkV3AAMM2vPiBYfvWmgPUpJDFUJ+Pj/wGv3Iu/7e6F5Iz2OjLg==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <title>- Mi Portfolio - </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="icon" href="programacion_1.ico">
+  <link rel="stylesheet" href="estilos.css?v=5">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <title>Nicolás Hernández — Portfolio</title>
 </head>
 <body>
-    <section>
-        <section class="uno">
-            <div class="caja-cara">
-                <img class="cara" src="fotoNico.jpg" alt="Maxi Programa">
-            </div>
 
-            <div>
-                <h1 id="nombre">- Nicolás Hernández -</h1>
-                <h2 id="profesion">Desarrollador Full Stack</h2>
+  <!-- CODE RAIN CANVAS -->
+  <canvas id="codeCanvas"></canvas>
 
-                <div class="contacto">
-                    <a href="https://www.linkedin.com/in/c-nicolas-hernandez/" target="_blank">
-                        <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="">
-                    </a>
-                    <a href="https://github.com/cnHernandez" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
-    </section>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">NH_DEV</a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">SOBRE_MI</a></li>
+      <li><a href="#education">FORMACION</a></li>
+      <li><a href="#projects">PROYECTOS</a></li>
+    </ul>
+  </nav>
 
-    <section class="dos">
-        <h2 id="sobreMi">-Sobre mí-</h2>
-        <div id="descripcionSobreMi">
-            Soy un profesional con más de 14 años de experiencia en distintos sectores y un perfil en plena consolidación dentro del desarrollo de software. 
-            Cuento con un año de experiencia como desarrollador full-stack, utilizando tecnologías como .NET, React y bases de datos SQL. 
-            Actualmente busco continuar mi crecimiento profesional en el ámbito del desarrollo, aportando una mirada integral, capacidad de aprendizaje continuo 
-            y compromiso con la calidad del producto. Me motiva formar parte de equipos donde pueda seguir aprendiendo, aportar soluciones creativas y generar valor a través de la tecnología.
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#about">SOBRE_MI</a>
+    <a href="#education">FORMACION</a>
+    <a href="#projects">PROYECTOS</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="uno" id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="caja-cara">
+        <div class="cara-frame">
+          <img class="cara" src="fotoNico.jpg" alt="Nicolás Hernández">
         </div>
+        <div class="hero-ring"></div>
+      </div>
 
-        <h2 id="Aptitudes">-Aptitudes-</h2>
-        <div id="descripcionAptitudes">
-            Desarrollo de aplicaciones web fullstack • Diseño e implementación de APIs RESTful • Interfaces modernas y accesibles • 
-            Metodologías ágiles • Trabajo en equipo interdisciplinario • Mejora continua
-        </div>
-        
-        <div style="text-align: center; margin: 30px 0;">
-            <a href="CV - Nicolás Hernández.pdf" download class="btn-cv">
-                <i class="fas fa-download"></i> Descargar CV
-            </a>
-        </div>
-    </section>
+      <h1 id="nombre">
+        <span class="nombre-bracket">[</span>
+        Nicolás Hernández
+        <span class="nombre-bracket">]</span>
+      </h1>
 
-    <section class="tres">
-        <h2 id="Cursos">-Formación Académica-</h2>
-        <ul id="listaCursos">
-            <li>Testing QA | Talento Tech (2025 - Actualidad)</li>
-            <li>Programador React JS | Talento Tech (2025)</li>
-            <li>Programador Front End JavaScript | Talento Tech (2024 - 2025)</li>
-            <li>Ciencia de Datos e Inteligencia Artificial | ArgentinaPrograma 4.0 (2023 - 2024)</li>
-            <li>Programador Full Stack | MaxiPrograma (2022 - 2023)</li>
-            <li>Técnico Universitario Superior en Programación | UTN-FRGP (2021 - 2024)</li>
-            <li>Bachiller en Economía y Gestión | Colegio San Marcos (2002 - 2009)</li>
-        </ul>
-    </section>
+      <h2 id="profesion"><span id="typed-text"></span><span class="typing-cursor"></span></h2>
 
-    <section class="cuatro">
-        <h2 id="Proyectos">-Proyectos-</h2>
-        <div class="proyectos slider">
-            <!-- Proyectos individuales -->
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="logo.png" alt="Sistema de Gestión de Flota">
-                    <p id="txtProyecto">🚌 Proyecto Freelance en Producción - Sistema integral de gestión de mantenimiento de flota para empresa de transporte. Backend: API RESTful con .NET 8 y MySQL, dockerizado y desplegado en AWS. Frontend: React con Tailwind CSS. Gestiona aceite, VTV y trazabilidad de cubiertas con alertas automáticas</p>
-                    <a href="https://github.com/cnHernandez/webApi">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="WhatsApp Image 2024-10-06 at 14.03.48.jpeg" alt="PKB Burger">
-                    <p id="txtProyecto">🍔 Proyecto Freelance - Carrito de compras para cadena de comida rápida con React y Tailwind CSS. Incluye integración con WhatsApp y pasarela de pago de Mercado Pago</p>
-                    <a href="https://github.com/cnHernandez/PKBe">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://media.a24.com/p/8785e80dd5b9616effc96fc86232c38b/adjuntos/296/imagenes/009/090/0009090086/1200x675/smart/18_14_las_gaviotasjpg.jpg" alt="San Clemente">
-                    <p id="txtProyecto">🏖️ Aplicación Mobile - App de alquiler de inmuebles en la costa argentina desarrollada con React Native y Expo</p>
-                    <a href="https://github.com/cnHernandez/San-Clemente---ReactNative">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://i1.wp.com/www.pacozea.com/wp-content/uploads/2020/09/tecnologias-informacion.jpg?ssl=1" alt="">
-                    <p id="txtProyecto">Aplicación de escritorio, Gestor de artículos de tecnología con C# contra BD SQL Server</p>
-                    <a href="https://github.com/LucaDBTT/TP-WinForm-Equipo-12">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://dosg.net/wp-content/uploads/2018/03/cafeteria.jpg" alt="">
-                    <p id="txtProyecto">Aplicación de consola, Gestor de cafetería con C++</p>
-                    <a href="https://github.com/cnHernandez/Cafeteria">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://mecaluxar.cdnwm.com/manual-de-almacenaje/diseno-almacen-central/image-3.1.0.jpg" alt="">
-                    <p id="txtProyecto">Aplicación web, Comercio Multipropósito con ASP.NET, C# y BD SQL Server</p>
-                    <a href="https://github.com/cnHernandez/TP_FINAL_COMERCIO_EQUIPO12">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://th.bing.com/th/id/OIP._rL0CvdH_xnNLyfulja07AHaHa?rs=1&pid=ImgDetMain" alt="">
-                    <p id="txtProyecto">Aplicación web, Carrito de Compras con ASP.NET, C# y BD SQL Server</p>
-                    <a href="https://github.com/LucaDBTT/tp-web-equipo-12">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://es.justexw.com/wp-content/uploads/sites/2/plantilla-para-turnos-rotativos-gratis.jpg" alt="">
-                    <p id="txtProyecto">Aplicación web, Administrador de Turnos, Pacientes y Médicos para Clínica con ASP.NET, C# y BD SQL Server</p>
-                    <a href="https://github.com/LucaDBTT/App-Turnos">Ver</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="proyecto-item">
-                    <img src="https://static.vecteezy.com/system/resources/previews/005/878/755/non_2x/secure-payment-modern-flat-concept-for-web-banner-design-woman-logs-into-online-banking-account-using-password-and-manages-her-credit-card-in-app-illustration-with-isolated-people-scene-vector.jpg" alt="">
-                    <p id="txtProyecto">Gestor de Clientes, Administradores, Préstamos y Transferencias para Aplicación Web Bancaria con Java, JSP, Servlets, Interfaces y BD MySQL Server</p>
-                    <a href="https://github.com/cnHernandez/Sistema-Bancario">Ver</a>
-                </div>
-            </div>
+      <div class="contacto">
+        <a href="https://www.linkedin.com/in/c-nicolas-hernandez/" target="_blank" class="social-btn" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/cnHernandez" target="_blank" class="social-btn" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <a href="CV.Nicolas Hernandez.pdf" download class="btn-cv">
+        <i class="fas fa-download"></i> Descargar CV
+      </a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="dos fade-in" id="about">
+    <h2 class="section-title"><span class="bracket">//</span> SOBRE_MI</h2>
+    <div class="section-line"></div>
+
+    <div class="about-grid">
+      <div class="about-card fade-in">
+        <p class="about-label">// perfil</p>
+        <p>
+          Desarrollador con más de 14 años de experiencia en distintos sectores y un perfil en plena consolidación
+          dentro del desarrollo de software. Cuento con más de dos años de experiencia como desarrollador full-stack,
+          utilizando tecnologías como .NET, React y bases de datos SQL.<br><br>
+          Busco continuar mi crecimiento profesional aportando una mirada integral, capacidad de aprendizaje
+          continuo y compromiso con la calidad del producto.
+        </p>
+      </div>
+
+      <div class="about-card fade-in">
+        <p class="about-label">// aptitudes</p>
+        <div class="skills-chips">
+          <span class="chip">.NET 8</span>
+          <span class="chip">React</span>
+          <span class="chip">React Native</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">SQL / MySQL</span>
+          <span class="chip">Docker</span>
+          <span class="chip">AWS</span>
+          <span class="chip">APIs RESTful</span>
+          <span class="chip">Git</span>
+          <span class="chip">Testing QA</span>
+          <span class="chip">Metodologías Ágiles</span>
+          <span class="chip">C#</span>
+          <span class="chip">Java</span>
         </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 3000,
-            });
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="tres fade-in" id="education">
+    <canvas id="eduCanvas"></canvas>
+    <h2 class="section-title"><span class="bracket">//</span> FORMACION</h2>
+    <div class="section-line"></div>
+
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Business Intelligence</strong> — Talento Tech
+          <br><em class="timeline-year">Mar 2026 – Actualidad</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Testing QA</strong> — Talento Tech
+          <br><em class="timeline-year">2025</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Programador React JS</strong> — Talento Tech
+          <br><em class="timeline-year">2025</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Programador Front End JavaScript</strong> — Talento Tech
+          <br><em class="timeline-year">2024 – 2025</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Ciencia de Datos e Inteligencia Artificial</strong> — ArgentinaPrograma 4.0
+          <br><em class="timeline-year">2023 – 2024</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Programador Full Stack</strong> — MaxiPrograma
+          <br><em class="timeline-year">2022 – 2023</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Técnico Universitario Superior en Programación</strong> — UTN-FRGP
+          <br><em class="timeline-year">2021 – 2024</em>
+        </span>
+      </div>
+      <div class="timeline-item fade-in">
+        <span>
+          <strong>Bachiller en Economía y Gestión</strong> — Colegio San Marcos
+          <br><em class="timeline-year">2002 – 2009</em>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="cuatro fade-in" id="projects">
+    <h2 class="section-title"><span class="bracket">//</span> PROYECTOS</h2>
+    <div class="section-line"></div>
+
+    <div class="proyectos slider">
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=800&auto=format&fit=crop" alt="IronBros E-Commerce">
+          <div class="card-body">
+            <p class="txt-proyecto">💪 <strong>Freelance · Producción · 2026</strong> — E-Commerce de suplementos deportivos. Frontend con React (componentes reutilizables), catálogo con filtros dinámicos, carrito integrado con WhatsApp Business. Interfaz mobile-first con Tailwind CSS y React Hooks.</p>
+            <a href="https://www.ironbros.com.ar" target="_blank">Ver sitio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="logo.png" alt="Sistema de Gestión de Flota">
+          <div class="card-body">
+            <p class="txt-proyecto">🚌 <strong>Freelance · Producción · 2025</strong> — Sistema end-to-end de gestión de mantenimiento de flota (gomería, aceite, VTV). API RESTful .NET 8 + JWT + MySQL, desplegado en AWS (EC2/S3). Frontend React + Tailwind CSS con alertas automáticas de vencimiento y trazabilidad de cubiertas.</p>
+            <a href="https://github.com/cnHernandez/webApi" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="WhatsApp Image 2024-10-06 at 14.03.48.jpeg" alt="PKB Burger">
+          <div class="card-body">
+            <p class="txt-proyecto">🍔 <strong>Freelance</strong> — Carrito de compras para cadena de comida rápida con React y Tailwind CSS. Integración con WhatsApp y pasarela de pago Mercado Pago.</p>
+            <a href="https://github.com/cnHernandez/PKBe" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://media.a24.com/p/8785e80dd5b9616effc96fc86232c38b/adjuntos/296/imagenes/009/090/0009090086/1200x675/smart/18_14_las_gaviotasjpg.jpg" alt="San Clemente">
+          <div class="card-body">
+            <p class="txt-proyecto">🏖️ <strong>App Mobile</strong> — Alquiler de inmuebles en la costa argentina. Desarrollada con React Native y Expo.</p>
+            <a href="https://github.com/cnHernandez/San-Clemente---ReactNative" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://i1.wp.com/www.pacozea.com/wp-content/uploads/2020/09/tecnologias-informacion.jpg?ssl=1" alt="Gestor Artículos">
+          <div class="card-body">
+            <p class="txt-proyecto">🖥️ <strong>Escritorio</strong> — Gestor de artículos de tecnología con C# y SQL Server (WinForms).</p>
+            <a href="https://github.com/LucaDBTT/TP-WinForm-Equipo-12" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://dosg.net/wp-content/uploads/2018/03/cafeteria.jpg" alt="Cafetería C++">
+          <div class="card-body">
+            <p class="txt-proyecto">☕ <strong>Consola</strong> — Gestor de cafetería desarrollado en C++.</p>
+            <a href="https://github.com/cnHernandez/Cafeteria" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://mecaluxar.cdnwm.com/manual-de-almacenaje/diseno-almacen-central/image-3.1.0.jpg" alt="Comercio Web">
+          <div class="card-body">
+            <p class="txt-proyecto">🏪 <strong>Web</strong> — Comercio multipropósito con ASP.NET, C# y SQL Server.</p>
+            <a href="https://github.com/cnHernandez/TP_FINAL_COMERCIO_EQUIPO12" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://th.bing.com/th/id/OIP._rL0CvdH_xnNLyfulja07AHaHa?rs=1&pid=ImgDetMain" alt="Carrito ASP.NET">
+          <div class="card-body">
+            <p class="txt-proyecto">🛒 <strong>Web</strong> — Carrito de compras con ASP.NET, C# y SQL Server.</p>
+            <a href="https://github.com/LucaDBTT/tp-web-equipo-12" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://es.justexw.com/wp-content/uploads/sites/2/plantilla-para-turnos-rotativos-gratis.jpg" alt="Turnos Clínica">
+          <div class="card-body">
+            <p class="txt-proyecto">🏥 <strong>Web</strong> — Administrador de turnos, pacientes y médicos para clínica con ASP.NET, C# y SQL Server.</p>
+            <a href="https://github.com/LucaDBTT/App-Turnos" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="proyecto-item">
+          <img src="https://static.vecteezy.com/system/resources/previews/005/878/755/non_2x/secure-payment-modern-flat-concept-for-web-banner-design-woman-logs-into-online-banking-account-using-password-and-manages-her-credit-card-in-app-illustration-with-isolated-people-scene-vector.jpg" alt="Sistema Bancario">
+          <div class="card-body">
+            <p class="txt-proyecto">🏦 <strong>Web</strong> — Gestor de clientes, préstamos y transferencias bancarias con Java, JSP, Servlets y MySQL.</p>
+            <a href="https://github.com/cnHernandez/Sistema-Bancario" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 <span>Nicolás Hernández</span> — Full Stack Developer</p>
+    <p>Diseñado &amp; desarrollado con <span>&lt;/&gt;</span></p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    /* ── SLICK CAROUSEL ── */
+    $(document).ready(function () {
+      $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        pauseOnHover: true,
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+            },
+          },
+        ],
+      });
+    });
+
+    /* ── MOBILE NAV ── */
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const menuLinks = menu ? menu.querySelectorAll('a') : [];
+
+      if (!toggle || !menu) return;
+
+      function setMenuState(isOpen) {
+        toggle.classList.toggle('active', isOpen);
+        menu.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        menu.setAttribute('aria-hidden', String(!isOpen));
+        document.body.classList.toggle('menu-open', isOpen);
+      }
+
+      toggle.addEventListener('click', function () {
+        setMenuState(!menu.classList.contains('open'));
+      });
+
+      menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          setMenuState(false);
         });
-    </script>
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+          setMenuState(false);
+        }
+      });
+    })();
+
+    /* ── CODE RAIN (Matrix style) ── */
+    (function () {
+      const canvas = document.getElementById('eduCanvas');
+      const ctx    = canvas.getContext('2d');
+      const chars  = '01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZ{}[]()<>/\\;:=+-*&|^~#@!?';
+      const fontSize = 13;
+      let cols, drops;
+
+      function resize() {
+        canvas.width  = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        cols  = Math.floor(canvas.width / fontSize);
+        drops = Array.from({ length: cols }, () => Math.random() * -100);
+      }
+
+      function draw() {
+        ctx.fillStyle = 'rgba(5, 8, 16, 0.045)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#00d4ff';
+        ctx.font = fontSize + 'px Space Mono, monospace';
+
+        for (let i = 0; i < drops.length; i++) {
+          const ch = chars[Math.floor(Math.random() * chars.length)];
+          ctx.fillText(ch, i * fontSize, drops[i] * fontSize);
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i] += 0.55;
+        }
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+      setInterval(draw, 45);
+    })();
+
+    /* ── TYPING EFFECT ── */
+    (function () {
+      const phrases = [
+        'Desarrollador Full Stack',
+        '.NET + React Developer',
+        'API RESTful · Docker · AWS',
+        'Siempre aprendiendo...',
+      ];
+      let pi = 0, ci = 0, deleting = false;
+      const el = document.getElementById('typed-text');
+
+      function type() {
+        const current = phrases[pi];
+        if (!deleting) {
+          el.textContent = current.slice(0, ++ci);
+          if (ci === current.length) { deleting = true; setTimeout(type, 1800); return; }
+        } else {
+          el.textContent = current.slice(0, --ci);
+          if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+        }
+        setTimeout(type, deleting ? 42 : 72);
+      }
+      type();
+    })();
+
+    /* ── SCROLL FADE-IN ── */
+    (function () {
+      const els = document.querySelectorAll('.fade-in');
+      const io  = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+
 </body>
 </html>
